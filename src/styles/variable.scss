@@ -1,0 +1,96 @@
+$White: #fff;
+$FogGrey: #f5f8fa;
+$Black: #212121;
+$DGrey: #333333;
+
+$LGrey: #e0e0e0;
+$borderCol: #dde5ed;
+$greyBG: #f5f8fa;
+
+$Blue: #00aced;
+$DodgerBlue: #4790fb;
+$DBlue: #002f6c;
+$Green: #26d07c;
+$DGreen: #11bf80;
+$Yellow: #ffad00;
+$Red: #ff585d;
+$Orange: #F27447;
+
+$Pink: #c7177a;
+
+$screenMobile: 320px;
+$screenTablet: 640px;
+$screenLgTablet: 768px;
+$screenWeb: 960px;
+$screenLgWeb: 1272px;
+
+
+//Start -  Mixin
+
+@mixin fontStyle($size: false, $color: false, $weight: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $color {
+    color: $color;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+}
+
+
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin fontIcon($size, $color: false) {
+  font-size: $size;
+  @if $color {
+    color: $color;
+  }
+}  
+
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin textTruncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin bShadow($value) {
+  -moz-box-shadow: $value;
+  -webkit-box-shadow: $value;
+  box-shadow: $value;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+//Mixins for creating more color from the base colors defined in framework
+
+@mixin bg-opacity($color, $opacity) {
+  background: rgba($color, $opacity);
+}
+
+//End -  Mixin

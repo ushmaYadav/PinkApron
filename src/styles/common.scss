@@ -1,0 +1,115 @@
+
+@import './variable.scss';
+
+.container{
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.bg-white{
+    background: $White !important;
+}
+
+.p-bottom-zero{
+    padding-bottom: 0 !important;
+}
+
+.p-top-zero{
+    padding-top: 0 !important;
+}
+
+.b-bottom-grey{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+@media (min-width: $screenLgTablet){
+    .container{
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .m-right-60{
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: $screenLgWeb){
+    .container{
+       width: $screenLgWeb;
+    }
+}
+
+ul.list{
+    .list-item{
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 9px;
+            border: 3px solid $Pink;
+            border-top-color: #fff;
+            border-right-color: #fff;
+            margin-right: 12px;
+            vertical-align: middle;
+            border-radius: 2px;
+            transform: rotate(-45deg);
+            position: relative;
+            top: -4px;
+        }
+    }
+}
+
+.margin-top-18{
+    margin-top: 18px;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 72px;   
+}
+
+.footer-container{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.text-link{
+    color: #fff;
+    font-weight: 900;
+}
+
+.brand-color{
+    color: $Pink;
+}
+
+.font-size-20{
+    font-size: 20px;
+}
+
+.btn{
+    background: $Pink;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 13px;
+   
+    font-weight: 600;
+    border-radius: 4px;
+
+    
+}
+
+@media (min-width: $screenLgTablet){
+    .btn{
+        padding: 15px 24px;
+        font-size: 16px;
+    }
+}
+
+
+.font-family--cursive{
+    font-family: cursive;
+}
