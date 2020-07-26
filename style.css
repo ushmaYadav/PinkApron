@@ -169,10 +169,17 @@ ul.list .list-item::before {
   margin-top: 18px; }
 
 .header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  height: 72px; }
+  width: 90px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 4;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 6px; }
+  .header img {
+    width: 78px;
+    height: 78px; }
 
 .footer-container {
   padding: 30px 0;
@@ -191,15 +198,24 @@ ul.list .list-item::before {
 .btn {
   background: #c7177a;
   color: #fff;
+  letter-spacing: 1px;
   padding: 12px 20px;
   font-size: 13px;
   font-weight: 600;
   border-radius: 4px; }
+  .btn:hover {
+    background: #de0d83; }
 
 @media (min-width: 768px) {
   .btn {
     padding: 15px 24px;
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .header {
+    width: 120px; }
+    .header img {
+      width: 108px;
+      height: 108px; } }
 .font-family--cursive {
   font-family: cursive; }
 
@@ -210,7 +226,7 @@ ul.list .list-item::before {
 .hero-banner {
   width: 100%;
   height: 300px;
-  background-image: url(./src/assets/banner-image1.jpg);
+  background-image: url(./src/assets/banner-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -295,28 +311,40 @@ ul.list .list-item::before {
   .hor-center:last-child {
     margin-top: 10px; }
 
-.footer-container .container .footer {
-  margin-bottom: 18px; }
-.footer-container .container .right-section .heading {
-  font-size: 18px;
-  margin-bottom: 3px;
-  text-transform: uppercase; }
-.footer-container .container .right-section .contact-us {
-  margin-bottom: 18px; }
-  .footer-container .container .right-section .contact-us .number a {
-    color: #c7177a;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 2px; }
-.footer-container .container .right-section .social-icons-container {
-  margin-top: 6px; }
-  .footer-container .container .right-section .social-icons-container .social-icons {
-    margin-right: 12px; }
-    .footer-container .container .right-section .social-icons-container .social-icons img {
-      width: 30px;
-      height: 30px; }
-    .footer-container .container .right-section .social-icons-container .social-icons:last-child {
-      margin-right: 0; }
+.footer-container .container {
+  display: flex;
+  flex-direction: column; }
+  .footer-container .container .footer {
+    order: 2;
+    margin-top: 18px; }
+  .footer-container .container .right-section .heading {
+    font-size: 18px;
+    margin-bottom: 3px;
+    text-transform: uppercase; }
+  .footer-container .container .right-section .contact-us {
+    margin-bottom: 18px; }
+    .footer-container .container .right-section .contact-us .number {
+      display: flex;
+      align-items: center; }
+      .footer-container .container .right-section .contact-us .number a {
+        color: #00aced;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px; }
+  .footer-container .container .right-section .social-icons-container {
+    margin-top: 6px; }
+    .footer-container .container .right-section .social-icons-container .social-icons {
+      margin-right: 12px; }
+      .footer-container .container .right-section .social-icons-container .social-icons img {
+        width: 25px;
+        height: 25px; }
+      .footer-container .container .right-section .social-icons-container .social-icons:last-child {
+        margin-right: 0; }
+
+.footer-icon.material-icons {
+  font-size: 15px;
+  color: #00aced;
+  margin-right: 12px; }
 
 @media (min-width: 768px) {
   .hero-banner {
@@ -369,20 +397,27 @@ ul.list .list-item::before {
 
   .footer-container .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center; }
     .footer-container .container .footer {
-      margin-bottom: 0px; }
+      order: 1;
+      margin-top: 0; }
     .footer-container .container .right-section {
-      display: flex; }
+      display: flex;
+      order: 2; }
       .footer-container .container .right-section .heading {
         font-size: 20px;
         margin-bottom: 12px; }
       .footer-container .container .right-section .contact-us {
         margin-right: 60px;
         margin-bottom: 0px; }
-        .footer-container .container .right-section .contact-us .number a {
-          font-size: 16px; }
+        .footer-container .container .right-section .contact-us .number {
+          margin-bottom: 6px; }
+          .footer-container .container .right-section .contact-us .number:last-child {
+            margin-bottom: 0; }
+          .footer-container .container .right-section .contact-us .number a {
+            font-size: 14px; }
       .footer-container .container .right-section .social-icons-container .social-icons img {
         width: 30px;
         height: 30px; }

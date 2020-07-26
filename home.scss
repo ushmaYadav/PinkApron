@@ -3,7 +3,7 @@
 .hero-banner{
     width: 100%;
     height: 300px;
-    background-image: url(./src/assets/banner-image1.jpg);
+    background-image: url(./src/assets/banner-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -126,8 +126,12 @@
 
 .footer-container{
   .container{  
+    display: flex;
+    flex-direction: column;
+
     .footer{
-      margin-bottom: 18px;
+      order: 2;
+      margin-top: 18px;
     }
 
     .right-section{
@@ -140,9 +144,11 @@
         margin-bottom: 18px;
   
         .number{
+          display: flex;
+          align-items: center;;
           a{
-            color: $Pink ;
-            font-size: 16px;
+            color: $Blue;
+            font-size: 14px;
             font-weight: 600;
             letter-spacing: 2px;
           }
@@ -155,8 +161,8 @@
           margin-right: 12px;
          
           img{
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
           }
 
           &:last-child{
@@ -166,6 +172,12 @@
       }
     }
   }
+}
+
+.footer-icon.material-icons{
+  font-size: 15px;
+  color: $Blue;
+  margin-right: 12px;
 }
 
 
@@ -253,15 +265,18 @@
       .container{
         
         display:flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
         .footer{
-          margin-bottom: 0px;
+          order: 1;
+          margin-top: 0;
         }
       
         .right-section{
           display: flex;
+          order: 2;
       
           .heading{
             font-size: 20px;
@@ -273,8 +288,13 @@
             margin-bottom: 0px;
       
             .number{
+              margin-bottom: 6px;
+
+              &:last-child{
+                margin-bottom: 0;
+              }
               a{
-                font-size: 16px;
+                font-size: 14px;
               }
             }    
           }
