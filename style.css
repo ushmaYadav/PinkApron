@@ -187,7 +187,8 @@ ul.list .list-item::before {
 
 .text-link {
   color: #fff;
-  font-weight: 900; }
+  font-weight: 900;
+  margin-bottom: 16px; }
 
 .brand-color {
   color: #c7177a; }
@@ -226,7 +227,7 @@ ul.list .list-item::before {
 .hero-banner {
   width: 100%;
   height: 300px;
-  background-image: url(./src/assets/banner-image.jpg);
+  background-image: url(./src/assets/banner-image.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -346,6 +347,14 @@ ul.list .list-item::before {
   color: #00aced;
   margin-right: 12px; }
 
+.free-reg {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: cursive; }
+
 @media (min-width: 768px) {
   .hero-banner {
     height: 400px;
@@ -422,7 +431,10 @@ ul.list .list-item::before {
         width: 30px;
         height: 30px; }
       .footer-container .container .right-section .social-icons-container .social-icons:first-child {
-        margin-left: 6px; } }
+        margin-left: 6px; }
+
+  .free-reg {
+    font-size: 20px; } }
 @media (min-width: 960px) {
   .home-card__heading {
     font-size: 36px;
