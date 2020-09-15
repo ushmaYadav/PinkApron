@@ -187,6 +187,7 @@
   font-weight: 800;
   letter-spacing: 1px;
   font-family: cursive;
+  margin-top: 20px;
 }
 
 
@@ -374,7 +375,9 @@
   display: flex;
   text-align: left;
 }
-
+.line-though{
+  text-decoration: line-through;
+}
 
 
 

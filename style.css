@@ -352,7 +352,8 @@ ul.list .list-item::before {
   font-size: 15px;
   font-weight: 800;
   letter-spacing: 1px;
-  font-family: cursive; }
+  font-family: cursive;
+  margin-top: 20px; }
 
 @media (min-width: 768px) {
   .hero-banner {
@@ -456,5 +457,8 @@ ul.list .list-item::before {
   margin: 18px 0;
   display: flex;
   text-align: left; }
+
+.line-though {
+  text-decoration: line-through; }
 
 /*# sourceMappingURL=style.css.map */
